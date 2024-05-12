@@ -98,7 +98,7 @@ SECTIONS {
         src/trig.o(.text);
         src/random.o(.text);
         src/util.o(.text);
-        src/daycare.o(.text);
+        +src/debug.o(.text);
         src/debug.o(.text);
         src/egg_hatch.o(.text);
         src/battle_interface.o(.text);
