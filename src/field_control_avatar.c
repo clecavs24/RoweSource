@@ -277,7 +277,16 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     if (input->tookStep && TryFindHiddenPokemon())
         return TRUE;
 
-    return FALSE;
++#if DEBUGGING
++    if (input->input_field_1_2)
++    {
++        PlaySE(SE_WIN_OPEN);
++        Debug_ShowMainMenu();
++        return TRUE;
++    }
++#endif    
+	
+	return FALSE;
 }
 
 static void GetPlayerPosition(struct MapPosition *position)
