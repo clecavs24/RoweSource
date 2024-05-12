@@ -717,7 +717,7 @@ SECTIONS {
         data/sound_data.o(.rodata);
 		src/boot_error_screen.o(.rodata);
         src/day_night.o(.rodata);
-        src/debug.o(.rodata);
+        +src/debug.o(.rodata);
         src/dexnav.o(.rodata);
         src/printf.o(.rodata);
         src/ud_trade.o(.rodata);
